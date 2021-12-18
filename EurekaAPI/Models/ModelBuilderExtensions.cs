@@ -69,7 +69,7 @@ namespace EurekaAPI.Models
                     {
                         CardId = 10005,
                         Topic = "Software",
-                        Title = "Create a chart in Excel",
+                        Title = "Create a chart in Microsoft Excel",
                         CreatedDate = new DateTime(2021, 10, 14, 13, 00, 00),
                         Step1 = "Select the range A1:E8 (Range of Values)",
                         Step2 = "On the Insert tab, in the Charts group, click the Line symbol",
