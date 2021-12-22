@@ -49,7 +49,7 @@ namespace EurekaAPI.Controllers
             return await cards.ToListAsync();
         }
 
-        //Display all cards
+        //Display by specific Card Id
         [HttpGet("{id}")]
         public async Task<ActionResult<Card>> GetCard(int id)
         {
@@ -63,7 +63,6 @@ namespace EurekaAPI.Controllers
             return card;
         }
 
-        //Display by specific Card Id
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCard(int id, Card card)
@@ -92,6 +91,30 @@ namespace EurekaAPI.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Card>> PostCard([FromBody] Card card)
+        {
+            _context.Cards.Add(card);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetCard", new { id = card.CardId }, card);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Card>> DeleteCard(int id)
+        {
+            var card = await _context.Cards.FindAsync(id);
+            if(card == null)
+            {
+                return NotFound();
+            }
+
+            _context.Cards.Remove(card);
+            await _context.SaveChangesAsync();
+
+            return card;
         }
 
         private bool CardExists(int id)

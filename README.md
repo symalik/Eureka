@@ -22,7 +22,21 @@ The `Eureka` API is a ASP.NET Web API that will be utilized to pull the cart cat
 
 <br>
 
-### Query Documentation:
+## Development
+
+---
+
+- Clone repository
+- API uses [localhost:44375](https://localhost:44375)
+- Nuget Packages utilized:
+  - Microsoft.EntityFrameworkCore (5.0.11)
+  - Microsoft.EntityFrameworkCore.InMemory (5.0.11)
+
+<br>
+
+## Query Documentation:
+
+---
 
 The user can use the below as an example of how to pull data from the API.
 
@@ -37,3 +51,9 @@ The user can use the below as an example of how to pull data from the API.
 | Search the Title for key words    | https://localhost:44375/api/cards?Title=Microsoft |
 
 <br>
+
+## Licence
+
+---
+
+`Eureka!` is [MIT Licenced](LICENSE.md)
