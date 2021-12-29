@@ -33,6 +33,15 @@ namespace EurekaAPI
 
             services.AddControllers();
 
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+               {
+                   builder.WithOrigins("http://localhost:5500")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+               });
+            });
 
         }
 
@@ -48,6 +57,8 @@ namespace EurekaAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

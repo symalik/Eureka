@@ -14,7 +14,7 @@ namespace EurekaAPI.Models
                     new Card
                     {
                         CardId = 10001,
-                        Topic = "Operation System",
+                        Topic = "Operating System",
                         Title = "Take a screenshot in Windows 10",
                         CreatedDate = new DateTime(2021, 12, 12, 08, 00, 00),
                         Step1 = "Open Snip & Sketch tool or press Windows Key + Shift + S",
