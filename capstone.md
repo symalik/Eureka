@@ -35,7 +35,7 @@ The information will be provided in a catalog card format. This will make it eas
 
 - Create a frontend with React.js
 - Search Feature
-- Ability to upload images
+- Ability to add additional card catolog item to the database
 
 <br>
 
@@ -48,6 +48,16 @@ The information will be provided in a catalog card format. This will make it eas
 | Dec. 26th | Complete all MVP for Project                         |
 | Dec. 28th | Postman API Tests, Endpoint and View Tests if needed |
 | Dec. 30th | Turn in Final Polished Code!                         |
+
+<br>
+
+### Future Updates:
+
+- [BackEnd] Utilize EF Migrations to create a database from the ModelBuilder/DBContext
+- [BackEnd] Unit Tests with xUnit.net
+- [BackEnd] Authentication/Authorization - OAuth 2.0, OpenID Connect, IdentityServer
+- [FrontEnd] Additional search feature - Topic, CardId, CreatedDate
+- [FrontEnd] Ability to let users add cards (form format)
 
 <br>
 
