@@ -28,6 +28,7 @@ The `Eureka` API is a ASP.NET Web API that will be utilized to pull the cart cat
 
 - Clone repository
 - API uses [localhost:44375](https://localhost:44375)
+- CORS Policy added for [localhost:5500](http://localhost:5500) (FrontEnd)
 - Nuget Packages utilized:
   - Microsoft.EntityFrameworkCore (5.0.11)
   - Microsoft.EntityFrameworkCore.InMemory (5.0.11)
