@@ -21,7 +21,7 @@ namespace EurekaAPI.Models
                         Step2 = "Click the menu to take a rectangular, free-form, window, or full-screen capture (from left to right)",
                         Step3 = "After you capture the screenshot, it will be saved to your clipboard",
                         Step4 = "A preview notification will appear in the lower-right corner of your screen",
-                        UserId = 1
+                        
                     },
                     new Card
                     {
@@ -34,7 +34,7 @@ namespace EurekaAPI.Models
                         Step3 = "Under Clear browsing data, click on Choose what to clear",
                         Step4 = "Check the boxes next to Cookies and saved website data and Cached data and files",
                         Step5 = "Click on Clear",
-                        UserId = 1
+                        
                     },
                     new Card
                     {
@@ -50,7 +50,7 @@ namespace EurekaAPI.Models
                         Step6 = "Take a Break",
                         Step7 = "Reward Yourself",
                         Step8 = "Hold yourself accountable",
-                        UserId = 2
+                        
                     },
                     new Card
                     {
@@ -63,7 +63,7 @@ namespace EurekaAPI.Models
                         Step3 = "Choose a background from the sidebar menu",
                         Step4 = "You will be given the option to blur your background or use a custom image",
                         Step5 = "Choose a background, preview it if desired, then click “Apply and turn on video”",
-                        UserId = 2
+                       
                     },
                     new Card
                     {
@@ -75,14 +75,8 @@ namespace EurekaAPI.Models
                         Step2 = "On the Insert tab, in the Charts group, click the Line symbol",
                         Step3 = "Click Line with Markers",
                         Step4 = "Enter a title by clicking on Chart Title (Optional)",
-                        UserId = 3
+                       
                     });
-
-
-            modelBuilder.Entity<User>().HasData(
-                        new User { Id = 1, Fname = "Fred", Lname = "Smith", Email = "fsmith@mail.com"},
-                        new User { Id = 2, Fname = "Jane", Lname = "Doe", Email = "jdoe@mail.com" },
-                        new User { Id = 3, Fname = "Thomas", Lname = "Anderson", Email = "aanderson@mail.com" });
 
         }
     }

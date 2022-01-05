@@ -20,7 +20,6 @@ namespace EurekaAPI.Models
         public string Step7 { get; set; }
         public string Step8 { get; set; }
         public string Step9 { get; set; }
-        public int UserId { get; set; }
 
     }
 }
