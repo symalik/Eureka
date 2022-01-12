@@ -47,21 +47,9 @@ namespace EurekaAPI.Controllers
                 .Take(queryParameters.Size);
 
             return await cards.ToListAsync();
+        
         }
 
-        //Display by specific Card Id
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Card>> GetCard(int id)
-        {
-            var card = await _context.Cards.FindAsync(id);
-
-            if (card == null)
-            {
-                return NotFound();
-            }
-
-            return card;
-        }
 
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

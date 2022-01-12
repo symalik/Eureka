@@ -46,7 +46,6 @@ The user can use the below as an example of how to pull data from the API.
 | Query                             | Example                                           |
 | --------------------------------- | ------------------------------------------------- |
 | Pull all card data                | https://localhost:44375/api/cards                 |
-| Pull data based on card ID        | https://localhost:44375/api/cards/10002           |
 | Set size and page limit           | https://localhost:44375/api/cards?size=4&page=2   |
 | Pull data based on specific Topic | https://localhost:44375/api/cards?Topic=Software  |
 | Search the Title for key words    | https://localhost:44375/api/cards?Title=Microsoft |
